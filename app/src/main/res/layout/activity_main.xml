@@ -10,15 +10,25 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="423dp"
-        tools:ignore="MissingConstraints"
-        android:onClick="onVanish"/>
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_current_portrait"
+        app:layout_constraintEnd_toEndOf="@+id/iv_current_portrait"
+        app:layout_constraintStart_toStartOf="@+id/iv_current_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_current_portrait" />
+
     <ImageView
         android:id="@+id/iv_current_portrait"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:src="@drawable/dumbledore_with_black_background"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
