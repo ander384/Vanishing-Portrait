@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
 
     <Button
@@ -17,7 +18,7 @@
         android:id="@+id/iv_current_portrait"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/dumbledore_with_black_background"
+        android:src="@drawable/dumbledore_with_black_background"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
