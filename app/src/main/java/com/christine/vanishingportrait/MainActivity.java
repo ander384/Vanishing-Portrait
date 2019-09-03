@@ -3,6 +3,7 @@ package com.christine.vanishingportrait;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     private Button enterButton;
     private Button clearButton;
     ImageView currentPortrait;
+    ImageView secretCode;
+    MediaPlayer magicSound;
+
     int count = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         currentPortrait = findViewById(R.id.iv_current_portrait);
+        this.secretCode = findViewById(R.id.iv_secret_code);
 
+        magicSound = MediaPlayer.create(this,R.raw.magicwand);
 
         this.enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,10 +52,15 @@ public class MainActivity extends AppCompatActivity {
                     if (count%2 == 1){
                         currentPortrait.setImageResource(R.drawable.empty_portrait);
                         ++count;
+                        inputDateTextView.setText("");
+                        secretCode.setVisibility(View.VISIBLE);
+                        magicSound.start();
                     }
                     else{
                         currentPortrait.setImageResource(R.drawable.dumbledore_with_black_background);
                         ++count;
+                        inputDateTextView.setText("");
+                        secretCode.setVisibility(View.INVISIBLE);
                     }/*Intent myIntent = new Intent(ErrorScreen.this, ClueScreen.class);
                 ErrorScreen.this.startActivity(myIntent);*/
                 }

@@ -8,15 +8,215 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_a"
+        android:text="A"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:onClick="onVanish"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_current_portrait"
-        app:layout_constraintEnd_toEndOf="@+id/iv_current_portrait"
-        app:layout_constraintStart_toStartOf="@+id/iv_current_portrait"
-        app:layout_constraintTop_toTopOf="@+id/iv_current_portrait" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_b"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_a"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:text="D"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_b"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_d"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_c"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_e"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_d"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_f"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_e"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_g"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="K"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_f"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_h"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_g"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_i"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"/>
+
+    <Button
+        android:id="@+id/btn_j"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_i"
+        app:layout_constraintTop_toBottomOf="@id/btn_b"/>
+
+    <Button
+        android:id="@+id/btn_k"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_j"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"/>
+
+    <Button
+        android:id="@+id/btn_l"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_k"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"/>
+
+    <Button
+        android:id="@+id/btn_m"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_l"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"/>
+
+    <Button
+        android:id="@+id/btn_n"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_m"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"/>
+
+    <Button
+        android:id="@+id/btn_o"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_n"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"/>
+
+    <Button
+        android:id="@+id/btn_p"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onVanish"
+        app:layout_constraintLeft_toRightOf="@id/btn_o"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"/>
+
+
+
 
     <ImageView
         android:id="@+id/iv_current_portrait"
@@ -24,11 +224,47 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:src="@drawable/dumbledore_with_black_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_secret_code"
+        android:layout_width="800dp"
+        android:layout_height="275dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/transfiguration_white_arrows_aacbdc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER"
+        app:layout_constraintRight_toLeftOf="@id/btn_clear"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_input_date"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
